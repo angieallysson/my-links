@@ -1,64 +1,115 @@
-/* =============================================
-   MYLINKS - ESTILOS BASE
-   En las próximas clases construirás encima
-   de estos estilos para mejorar el diseño.
-   ============================================= */
-
-/* --- ESTILOS GLOBALES --- */
+/* =========================
+MYLINKS - ESTILOS BASE En las próximas 
+clases construirás encima de estos 
+estilos para mejorar el diseño.
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+🌐 BODY
+========================= */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #0f0f13;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
   color: #ffffff;
+
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* --- TARJETA PRINCIPAL --- */
+/* =========================
+📦 TARJETA
+========================= */
 .card {
   width: 90%;
-  max-width: 400px;
+  max-width: 380px;
+
+  background: #1f1f2e;
+  padding: 30px 20px;
+  border-radius: 20px;
+
   text-align: center;
-  padding: 40px 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-/* --- FOTO DE PERFIL --- */
+/* =========================
+🖼️ FOTO
+========================= */
 .avatar {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid #7F55B1;
+  margin-bottom: 15px;
 }
 
-/* --- NOMBRE --- */
+/* =========================
+🔤 NOMBRE
+========================= */
 .name {
-  font-size: 28px;
-  margin-top: 16px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-/* --- BIO --- */
+/* =========================
+📝 BIO
+========================= */
 .bio {
-  font-size: 15px;
+  font-size: 14px;
   color: #a0a0b0;
   margin-top: 8px;
+  line-height: 1.4;
 }
 
-/* --- CONTENEDOR DE ENLACES --- */
+/* =========================
+🏷️ HABILIDADES
+========================= */
+.skills {
+  margin-top: 12px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #7F55B1;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 3px;
+}
+
+/* =========================
+🔗 LINKS
+========================= */
 .links {
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
-/* --- CADA ENLACE --- */
 .link {
   display: block;
-  padding: 14px;
-  margin-top: 12px;
-  border: 1px solid #2a2a38;
+  padding: 12px;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  background: #2a2a38;
+
   color: #ffffff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover limpio */
+.link:hover {
+  background: #7F55B1;
+  transform: translateY(-2px);
 }
